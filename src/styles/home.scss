@@ -1,0 +1,80 @@
+// Hero Section
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  position: relative;
+  background-color: rgba($color: #000000, $alpha: .6);
+  overflow: hidden;
+  color: white;
+
+  .image-hero-bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: url(../assets/Sheboygan-e1571415962712.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    animation: animate 90s linear infinite;
+  }
+
+  @keyframes animate { 
+    95% {
+      transform: scale(1.2);
+    }
+  }
+
+  .hero-btn-wrapper {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+  }
+}
+
+// Request Prayer
+
+.request-invite-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: $med-brown;
+  color: $white;
+}
+
+// Welcome Section
+
+.welcome-wrapper {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .left-side {
+    width: 35%;
+    display: flex;
+    justify-content: end;
+    padding: 10px 20px;
+
+    img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .right-side {
+    width: 60%;
+  }
+}
+
+.not-alone-wrapper {
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
